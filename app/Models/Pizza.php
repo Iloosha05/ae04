@@ -13,7 +13,7 @@ class Pizza extends Model
 
     public function ingredientes()
     {
-        return $this->belongsToMany(Ingrediente::class, 'ingredientes_pizza');
+        return $this->belongsToMany(Ingrediente::class, 'ingrediente_pizza');
     }
 }
 

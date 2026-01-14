@@ -1,6 +1,6 @@
 <h1> {{ $pizza->nombre}} </h1>
 <h2> {{ $pizza->precio}} </h2>
-<p> {{ $pizza->description}} </p>
+<p> {{ $pizza->descripcion}} </p>
 <h3>Ingredientes</h3>
 <ul>
     @foreach ($pizza->ingredientes as $ingrediente)

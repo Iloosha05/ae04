@@ -77,7 +77,9 @@ class PizzaController extends Controller
 
     public function destroy(Pizza $pizza){
         $pizza->delete();
-        return redirect()->route('pizzas.showAllPizzas');
+        return redirect()
+        ->route('pizzas.showAllPizzas')
+        ->with('success', 'Pizza eliminada correctamente');
     }
 
     public function showAllPizzas(){

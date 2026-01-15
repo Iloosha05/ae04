@@ -1,3 +1,5 @@
+@extends('layouts.app');
+
 <h1>Nueva pizza</h1>
 
 @if ($errors->any())

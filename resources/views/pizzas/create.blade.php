@@ -14,24 +14,24 @@
     </div>
 @endif
 
-<form method="POST" action="{{route('pizzas.store')}}">
-    @csrf 
+<form method="POST" action="{{ route('pizzas.store') }}">
+    @csrf
 
-    <input type="text" name="nombre" placeholder="Nombre" value="{{old('nombre')}}">
+    <input type="text" name="nombre" placeholder="Nombre" value="{{ old('nombre') }}">
 
-    <textarea name="descripcion">{{old('descripcion')}}</textarea>
+    <textarea name="descripcion">{{ old('descripcion') }}</textarea>
 
     <input type="number" step="0.01" name="precio" value="{{ old('precio') }}">
 
     <h3>Ingredientes</h3>
     @foreach($ingredientes as $ingrediente)
         <label>
-            <input type="checkbox" name="ingredientes[]" value="{{($ingrediente->id)}}" {{in_array($ingrediente->id, old('ingredientes', [])) ? 'checked' : ''}}>
+            <input type="checkbox" name="ingredientes[]" value="{{ $ingrediente->id }}" {{ in_array($ingrediente->id, old('ingredientes', [])) ? 'checked' : '' }}>
             {{ $ingrediente->nombre }}
-        </label>
+        </label><br>
     @endforeach
 
-    <button type="submit">Crear Pizza</button>
+    <button type="submit">Guardar</button>
 </form>
 
 @endsection

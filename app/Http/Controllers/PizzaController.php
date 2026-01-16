@@ -28,7 +28,7 @@ class PizzaController extends Controller
             'precio.required' => 'El precio es obligatorio.',
             'precio.numeric' => 'El precio debe ser un número.',
             'ingredientes.array' => 'Los ingredientes no son válidos.',
-            'ingrediente.required' => 'Los ingredientes no son válidos'
+            'ingredientes.required' => 'Los ingredientes no son válidos'
         ]);
 
          $pizza = Pizza::create([

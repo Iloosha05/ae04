@@ -1,4 +1,6 @@
-@extends('layouts.app');
+@extends('layouts.app')
+
+@section('content')
 
 <h1>Nuevo Ingrediente</h1>
 
@@ -17,3 +19,5 @@
     <input type="text" name="nombre" placeholder="Nombre" value="{{ old('nombre') }}">
     <button type="submit">Crear Ingrediente</button>
 </form>
+
+@endsection

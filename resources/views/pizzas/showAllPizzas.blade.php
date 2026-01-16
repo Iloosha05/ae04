@@ -1,4 +1,6 @@
-@extends('layouts.app');
+@extends('layouts.app')
+
+@section('content')
 
 @if(session('success'))
     <div style="color: green;">
@@ -21,3 +23,5 @@
     </tr>
     @endforeach
 </table>
+
+@endsection

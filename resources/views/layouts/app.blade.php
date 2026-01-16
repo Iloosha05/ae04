@@ -1,6 +1,16 @@
-<nav>
-    <a href="{{ route('pizzas.showAllPizzas') }}">Inicio</a>
-    <a href="{{ route('pizzas.create') }}">Crear Pizza</a>
-    <a href="{{ route('ingredientes.showAllIngredientes') }}">Listar Ingredientes</a>
-    <a href="{{ route('ingredientes.create') }}">Crear Ingrediente</a>
-</nav>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Pizza App</title>
+</head>
+<body>
+
+@include('partials.menu')
+
+<main>
+    @yield('content')
+</main>
+
+</body>
+</html>

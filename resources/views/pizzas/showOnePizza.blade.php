@@ -1,3 +1,7 @@
+@extends('layouts.app')
+
+@section('content')
+
 <h1> {{ $pizza->nombre}} </h1>
 <h2> {{ $pizza->precio}} </h2>
 <p> {{ $pizza->descripcion}} </p>
@@ -7,3 +11,5 @@
         <li>{{$ingrediente->nombre}}</li>
     @endforeach
 </ul>
+
+@endsection

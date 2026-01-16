@@ -53,10 +53,12 @@ class IngredienteController extends Controller
 
     public function destroy(Ingrediente $ingrediente){
         $ingrediente->delete();
+
         return redirect()
             ->route('ingredientes.showAllIngredientes')
             ->with('success', 'Ingrediente eliminado correctamente');
     }
+
 
     public function showAllIngredientes(){
         $ingredientes = Ingrediente::all();

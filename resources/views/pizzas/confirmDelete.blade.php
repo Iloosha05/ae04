@@ -1,3 +1,7 @@
+@extends('layouts.app')
+
+@section('content')
+
 <h1>Confirmar eliminación</h1>
 
 <p>
@@ -12,4 +16,6 @@
     <button type="submit">Sí, eliminar</button>
     <a href="{{ route('pizzas.showAllPizzas') }}">Cancelar</a>
 </form>
+
+@endsection
 

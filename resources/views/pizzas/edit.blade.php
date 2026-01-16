@@ -1,3 +1,7 @@
+@extends('layouts.app')
+
+@section('content')
+
 <h1>Editar pizza<h1>
 
 @if ($errors->any())
@@ -30,3 +34,5 @@
 
     <button type="submit">Actualizar</button>
 </form>
+
+@endsection

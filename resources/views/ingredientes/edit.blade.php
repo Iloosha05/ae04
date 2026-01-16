@@ -1,4 +1,6 @@
-@extends('layouts.app');
+@extends('layouts.app')
+
+@section('content')
 
 <h1>Editar Ingrediente</h1>
 
@@ -18,3 +20,5 @@
     <input type="text" name="nombre" value="{{ old('nombre', $ingrediente->nombre) }}">
     <button type="submit">Actualizar Ingrediente</button>
 </form>
+
+@endsection

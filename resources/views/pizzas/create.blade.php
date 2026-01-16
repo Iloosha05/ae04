@@ -1,4 +1,6 @@
-@extends('layouts.app');
+@extends('layouts.app')
+
+@section('content')
 
 <h1>Nueva pizza</h1>
 
@@ -31,3 +33,5 @@
 
     <button type="submit">Crear Pizza</button>
 </form>
+
+@endsection

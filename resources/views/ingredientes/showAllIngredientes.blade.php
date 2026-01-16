@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('content')
+
 @if(session('success'))
     <div style="color: green;">
         {{ session('success') }}
@@ -17,7 +19,6 @@
         <td><a href="{{ route('ingredientes.confirmDestroy', $ingrediente->id) }}">Eliminar</a></td>
     </tr>
     @endforeach
-    <tr>
-        <td><a href="{{ route('ingredientes.create') }}">Nuevo Ingrediente</a></td>
-    </tr>
 </table>
+
+@endsection
